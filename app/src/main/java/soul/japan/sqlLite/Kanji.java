@@ -1,4 +1,4 @@
-package soul.japan.SqlLite;
+package soul.japan.sqlLite;
 
 /**
  * Created by xavi_ on 19/11/2017.

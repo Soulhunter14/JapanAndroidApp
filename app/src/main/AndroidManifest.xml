@@ -10,26 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".KanjiListActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".KanjiDetailActivity"
-            android:label="@string/title_kanji_detail"
-            android:parentActivityName=".KanjiListActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="soul.japan.KanjiListActivity" />
-        </activity>
-        <activity
-            android:name=".MainMenu.MainActivity"
+            android:name=".mainMenu.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -37,6 +18,17 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".kanji.KanjiActivity"
+            android:label="@string/title_activity_kanji"
+            android:parentActivityName=".mainMenu.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mainMenu.MainActivity" />
         </activity>
     </application>
 

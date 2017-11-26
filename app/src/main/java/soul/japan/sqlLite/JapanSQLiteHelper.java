@@ -1,4 +1,4 @@
-package soul.japan.SqlLite;
+package soul.japan.sqlLite;
 
 import android.content.ContentValues;
 import android.content.Context;

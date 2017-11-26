@@ -1,5 +1,6 @@
-package soul.japan.MainMenu;
+package soul.japan.mainMenu;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import soul.japan.kanji.KanjiActivity;
 import soul.japan.R;
 
 public class MainActivity extends AppCompatActivity
@@ -82,8 +84,11 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+
+
         if (id == R.id.nav_kanjis) {
-            // Handle the camera action
+            Intent intent = new Intent(this, KanjiActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_words) {
 
         } else if (id == R.id.nav_manage) {
